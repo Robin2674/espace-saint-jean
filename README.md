@@ -1,1 +1,88 @@
 # espace-saint-jean
+[index.html](https://github.com/user-attachments/files/22102061/index.html)
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Location de salle à Crest - Espace Saint Jean">
+  <title>Espace Saint Jean - Crest</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Espace Saint Jean</h1>
+    <p>Location de salle de réception à Crest (Drôme)</p>
+  </header>
+
+  <nav>
+    <a href="#presentation">Présentation</a>
+    <a href="#salle">La salle</a>
+    <a href="#tarifs">Tarifs</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="presentation">
+    <h2>Présentation</h2>
+    <p>L'Espace Saint Jean est une salle de réception située à Crest, dans la Drôme, au cœur d'un cadre verdoyant et paisible. Idéal pour mariages, anniversaires, séminaires ou événements culturels, l'espace accueille jusqu'à 200 personnes.</p>
+
+    <div class="diaporama">
+      <img src="images/1.webp" alt="Salle ouverte sur l'extérieur">
+      <img src="images/2.webp" alt="Vue aérienne du domaine">
+      <img src="images/3.webp" alt="Cour intérieure rénovée">
+      <img src="images/4.webp" alt="Bâtisse en pierre naturelle">
+      <img src="images/5.webp" alt="Salle décorée pour réception">
+      <img src="images/6.webp" alt="Vue extérieure - Espace Saint Jean">
+    </div>
+  </section>
+
+  <section id="salle">
+    <h2>La salle</h2>
+    <ul>
+      <li>200 m² de salle avec parquet</li>
+      <li>200 m² de terrasse</li>
+      <li>250 m² d’esplanade</li>
+      <li>Bar et office de réchauffage</li>
+      <li>Cadre arboré et calme</li>
+    </ul>
+  </section>
+
+  <section id="tarifs">
+    <h2>Tarifs</h2>
+    <ul>
+      <li>En semaine : 200 €</li>
+      <li>Vendredi soir : 500 €</li>
+      <li>Week-end complet : 800 €</li>
+      <li>Acompte à la réservation : 150 €</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>📍 Adresse : Chemin du Petit Saint Jean, 26400 Crest</p>
+    <p>📞 Téléphone : <a href="tel:+33612459975">06 12 45 99 75</a></p>
+    <p>📧 Email : <a href="mailto:espacesaintjean@orange.fr">espacesaintjean@orange.fr</a></p>
+    <p>🌐 Site actuel : <a href="https://espacesaintjean.fr" target="_blank">espacesaintjean.fr</a></p>
+
+    <form>
+      <label for="nom">Nom :</label>
+      <input type="text" id="nom" name="nom" required>
+
+      <label for="email">Email :</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Message :</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Envoyer</button>
+    </form>
+
+    <iframe src="https://www.google.com/maps?q=Chemin+du+Petit+Saint+Jean,+26400+Crest&output=embed"
+      width="100%" height="300" allowfullscreen></iframe>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Espace Saint Jean - Tous droits réservés</p>
+  </footer>
+</body>
+</html>
