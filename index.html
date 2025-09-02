@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Location de salle à Crest - Espace Saint Jean">
+  <title>Espace Saint Jean - Crest</title>
+  <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/684/684908.png">
+  <style>
+    :root {
+      --primary: #3c4f65;
+      --secondary: #2d3b4f;
+      --accent: #ffd700;
+      --light: #f9f9f9;
+      --dark-bg: #1e1e1e;
+      --dark-text: #eeeeee;
+    }
+    * {
+      scroll-behavior: smooth;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      transition: all 0.3s ease;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--light);
+      color: #333;
+    }
+    body.dark-mode {
+      background-color: var(--dark-bg);
+      color: var(--dark-text);
+    }
+    header {
+      background: linear-gradient(to right, var(--primary), var(--secondary));
+      color: white;
+      padding: 3em 1em;
+      text-align: center;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    }
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background-color: var(--secondary);
+      display: flex;
+      justify-content: center;
+      gap: 2em;
+      padding: 1em;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 0.5em 1em;
+      border-radius: 5px;
+    }
+    nav a:hover {
+      background-color: var(--accent);
+      color: black;
+    }
+    section {
+      padding: 4em 2em;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      color: var(--primary);
+      margin-bottom: 1em;
+    }
+    body.dark-mode h2 {
+      color: var(--accent);
+    }
+    ul {
+      padding-left: 1.5em;
+    }
+    .fullscreen-gallery {
+      width: 100%;
+    }
+    .fullscreen-gallery img {
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
+      display: block;
+    }
+    .fullscreen-gallery figure {
+      margin: 0;
+      position: relative;
+    }
+    .fullscreen-gallery figcaption {
+      position: absolute;
+      bottom: 20px;
+      left: 40px;
+      background: rgba(0, 0, 0, 0.5);
+      color: white;
+      padding: 0.5em 1em;
+      border-radius: 5px;
+      font-size: 1.2em;
+    }
+    form label {
+      display: block;
+      margin-top: 1em;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 0.8em;
+      margin-top: 0.5em;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    body.dark-mode input, body.dark-mode textarea {
+      background: #444;
+      color: white;
+      border: 1px solid #777;
+    }
+    form button {
+      margin-top: 1em;
+      padding: 0.8em 1.5em;
+      background-color: var(--primary);
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    form button:hover {
+      background-color: var(--secondary);
+    }
+    iframe {
+      border: 0;
+      border-radius: 8px;
+      margin-top: 1em;
+    }
+    footer {
+      background-color: var(--primary);
+      color: white;
+      text-align: center;
+      padding: 1.5em;
+      margin-top: 2em;
+    }
+    .toggle-dark {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: var(--accent);
+      border: none;
+      padding: 0.7em 1em;
+      border-radius: 30px;
+      font-weight: bold;
+      cursor: pointer;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+      z-index: 9999;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Espace Saint Jean</h1>
+    <p>Location de salle de réception à Crest (Drôme)</p>
+  </header>
+
+  <nav>
+    <a href="#presentation">Présentation</a>
+    <a href="#salle">La salle</a>
+    <a href="#tarifs">Tarifs</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="presentation">
+    <h2>Présentation</h2>
+    <p>L'Espace Saint Jean est une salle de réception située à Crest, dans la Drôme, au cœur d'un cadre verdoyant et paisible. Idéal pour mariages, anniversaires, séminaires ou événements culturels, l'espace accueille jusqu'à 200 personnes.</p>
+  </section>
+
+  <div class="fullscreen-gallery">
+    <figure>
+      <img src="1.webp" alt="Salle ouverte sur l'extérieur">
+      <figcaption>Salle ouverte sur l'extérieur</figcaption>
+    </figure>
+    <figure>
+      <img src="2.webp" alt="Vue aérienne du domaine">
+      <figcaption>Vue aérienne du domaine</figcaption>
+    </figure>
+    <figure>
+      <img src="3.webp" alt="Cour intérieure rénovée">
+      <figcaption>Cour intérieure rénovée</figcaption>
+    </figure>
+    <figure>
+      <img src="4.webp" alt="Bâtisse en pierre naturelle">
+      <figcaption>Bâtisse en pierre naturelle</figcaption>
+    </figure>
+    <figure>
+      <img src="5.webp" alt="Salle décorée pour réception">
+      <figcaption>Salle décorée pour réception</figcaption>
+    </figure>
+    <figure>
+      <img src="6.webp" alt="Vue extérieure - Espace Saint Jean">
+      <figcaption>Vue extérieure - Espace Saint Jean</figcaption>
+    </figure>
+  </div>
+
+  <section id="salle">
+    <h2>La salle</h2>
+    <ul>
+      <li>200 m² de salle avec parquet</li>
+      <li>200 m² de terrasse</li>
+      <li>250 m² d’esplanade</li>
+      <li>Bar et office de réchauffage</li>
+      <li>Cadre arboré et calme</li>
+    </ul>
+  </section>
+
+  <section id="tarifs">
+    <h2>Tarifs</h2>
+    <ul>
+      <li>En semaine : 200 €</li>
+      <li>Vendredi soir : 500 €</li>
+      <li>Week-end complet : 800 €</li>
+      <li>Acompte à la réservation : 150 €</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>📍 Adresse : Chemin du Petit Saint Jean, 26400 Crest</p>
+    <p>📞 Téléphone : <a href="tel:+33612459975">06 12 45 99 75</a></p>
+    <p>📧 Email : <a href="mailto:espacesaintjean@orange.fr">espacesaintjean@orange.fr</a></p>
+    <p>🌐 Site actuel : <a href="https://espacesaintjean.fr" target="_blank">espacesaintjean.fr</a></p>
+
+    <form>
+      <label for="nom">Nom :</label>
+      <input type="text" id="nom" name="nom" required>
+
+      <label for="email">Email :</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Message :</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Envoyer</button>
+    </form>
+
+    <iframe src="https://www.google.com/maps?q=Chemin+du+Petit+Saint+Jean,+26400+Crest&output=embed" width="100%" height="300" allowfullscreen></iframe>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Espace Saint Jean - Tous droits réservés</p>
+  </footer>
+
+  <button class="toggle-dark" onclick="document.body.classList.toggle('dark-mode')">🌓 Mode sombre</button>
+</body>
+</html>
